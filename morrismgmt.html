@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sarah Morris | Sales and Marketing Operations Professional & Adjunct Management Professor">
+    <title>Sarah Morris | Sales & Marketing Operations Professional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background-color: #1f3a93;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            background-color: #34495e;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            border-bottom: 2px solid #ccc;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        h2 {
+            color: #1f3a93;
+        }
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+            max-height: 300px;
+        }
+        .carousel img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .blog-preview {
+            margin-top: 10px;
+        }
+        .instagram-feed img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sarah Morris</h1>
+    <p>Sales & Marketing Operations Professional | Adjunct Management Professor</p>
+    
+    <!-- Blog Carousel -->
+    <div class="carousel">
+        <img src="image1.jpg" alt="Blog Post 1">
+        <img src="image2.jpg" alt="Blog Post 2">
+        <img src="image3.jpg" alt="Blog Post 3">
+    </div>
+</header>
+
+<nav>
+    <a href="#about-me">About Me</a>
+    <a href="#teaching-interests">Teaching Interests</a>
+    <a href="#research-interests">Research Interests</a>
+    <a href="#experience">Experience</a>
+    <a href="#portfolio">Project Portfolio</a>
+    <a href="#blog">Blog</a>
+    <a href="#instagram">Instagram Feed</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about-me">
+    <h2>About Me</h2>
+    <p>Hi, I’m Sarah Morris, a seasoned Sales and Marketing Operations Professional with years of experience driving results in B2B industries. As an Adjunct Management Professor, I am passionate about bridging academic theory with real-world business practices.</p>
+</section>
+
+<section id="teaching-interests">
+    <h2>Teaching Interests</h2>
+    <p>My teaching interests include marketing strategy, sales operations, and organizational leadership. I strive to create engaging and interactive learning environments for students by combining theoretical frameworks with practical case studies.</p>
+</section>
+
+<section id="research-interests">
+    <h2>Research Interests</h2>
+    <p>My research focuses on the intersection of digital marketing technologies and operational efficiency. I am particularly interested in how organizations leverage data-driven marketing to optimize performance and customer engagement.</p>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <p>With over a decade of experience in sales and marketing operations, I’ve led teams in both corporate and startup environments. I’ve worked on improving CRM systems, optimizing marketing automation, and driving lead generation strategies.</p>
+</section>
+
+<section id="portfolio">
+    <h2>Project Portfolio</h2>
+    <p>Here are some of the key projects I’ve worked on:</p>
+    <ul>
+        <li>Revamping CRM systems to streamline sales processes</li>
+        <li>Implementing marketing automation for a 25% increase in lead conversion</li>
+        <li>Launching integrated sales and marketing campaigns for B2B clients</li>
+    </ul>
+</section>
+
+<section id="blog">
+    <h2>Blog</h2>
+    <div class="blog-preview">
+        <h3>Recent Post 1</h3>
+        <p>Summary of the first blog post...</p>
+    </div>
+    <div class="blog-preview">
+        <h3>Recent Post 2</h3>
+        <p>Summary of the second blog post...</p>
+    </div>
+    <div class="blog-preview">
+        <h3>Recent Post 3</h3>
+        <p>Summary of the third blog post...</p>
+    </div>
+</section>
+
+<section id="instagram">
+    <h2>Instagram Feed</h2>
+    <div class="instagram-feed">
+        <!-- Replace the below image src with links to Instagram images -->
+        <img src="instagram1.jpg" alt="Instagram Photo 1">
+        <img src="instagram2.jpg" alt="Instagram Photo 2">
+        <img src="instagram3.jpg" alt="Instagram Photo 3">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at: <a href="mailto:sarahmorris@example.com">sarahmorris@example.com</a></p>
+    <p>To schedule a meeting, <a href="https://calendar.google.com/calendar/u/0/r" target="_blank">click here to book a time</a>.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Sarah Morris. All rights reserved.</p>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel img');
+    const totalImages = images.length;
+
+    function showImage(index) {
+        images.forEach((img) => {
+            img.style.display = 'none';
+        });
+        images[index].style.display = 'block';
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % totalImages;
+        showImage(currentIndex);
+    }
+
+    showImage(currentIndex);
+
+    setInterval(nextImage, 5000);
+</script>
+
+</body>
+</html>
